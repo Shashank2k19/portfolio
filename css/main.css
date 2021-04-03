@@ -107,7 +107,6 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* font-family: 'Rajdhani', sans-serif; */
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -165,7 +164,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'edu edu edu' 'job1 job2 job3' 'intern intern intern' 'job4 job5 job6 ';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -175,12 +174,20 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1rem; }
+  .about-info .edu {
+    grid-area: edu; }
+
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
+  .about-info .intern {
+    grid-area: intern; }
+
+
+
   .about-info .job {
     background: #515151;
     padding: 0.5rem;

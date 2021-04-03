@@ -1,0 +1,39 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+
+form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+  text-align: center;
+}
+
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+input{
+  height: 45px;
+}
+
+form .submit{
+ background:  #eece1a;
+  border-color: transparent;
+  font-weight: bold;
+  margin-top: 40px;
+  height: 50px;
+}
+
+form .submit:hover{
+  background-color: wheat;
+  cursor: pointer;
+}
+
