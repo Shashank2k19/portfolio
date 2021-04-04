@@ -185,6 +185,12 @@ main {
     grid-area: job3; }
   .about-info .intern {
     grid-area: intern; }
+  .about-info .job-4 {
+    grid-area: job4; }
+  .about-info .job-5 {
+    grid-area: job5; }
+  .about-info .job-6 {
+    grid-area: job6; }
 
 
 
