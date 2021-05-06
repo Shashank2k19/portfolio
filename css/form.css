@@ -11,7 +11,7 @@ form{
 }
 
 .form-control{
-  width: 600px;
+  width: 60%;
   background: transparent;
   border: none;
   outline: none;
@@ -26,10 +26,11 @@ input{
 
 form .submit{
  background:  #eece1a;
-  border-color: transparent;
-  font-weight: bold;
-  margin-top: 40px;
-  height: 50px;
+ width: 50%;
+ border-color: transparent;
+ font-weight: bold;
+ margin-top: 40px;
+ height: 50px;
 }
 
 form .submit:hover{
