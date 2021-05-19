@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -47,17 +47,18 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #fff;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/portrait.jpg");
+      width: 300px;
+      height: 300px;
+      background: url("../img/Untitled.png");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #eece1a;
+     }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -102,15 +103,16 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: url(../img/bg.jpg);
   color: #fff;
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
-    background: rgba(68, 68, 68, 0.9), url(../img/background.jpg);
+    background: url(../img/bg2.png);
+    background: rgba(68, 68, 68, 0.9), url(../img/bg2.png);
     background-attachment: fixed;
     background-size: cover; } 
 
@@ -133,6 +135,12 @@ h3 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
+  h2.ny-heading{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); 
+  }
 
 a {
   color: #fff;
@@ -168,6 +176,8 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
+    width: 280px;
+    height: 280px;
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid; }
@@ -192,12 +202,22 @@ main {
   .about-info .job-6 {
     grid-area: job6; }
 
-
-
   .about-info .job {
-    background: #515151;
+    background: rgba(36, 35, 35, 0.5);
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
+
+    .internimg {
+      float: right;
+      margin: 0.1rem;
+      transition: all 0.5s ease-out; }
+    .internimg img{
+      width: 100px;
+      height: 100px;}
+    #pie{
+      width: 70px;
+      height: 70px
+    }
 
 .projects {
   display: grid;
@@ -218,9 +238,10 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    background: rgba(56, 55, 55, 0.5); 
+    padding: 1rem 2rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
@@ -229,6 +250,19 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+
+       .skillimg {
+          float: left;
+          padding: 0.5rem 1.5rem 0.5rem 0rem ;
+          margin: 0.1rem;
+          transition: all 0.5s ease-out; }
+          
+        .skillimg img{
+          width: 100px;
+          height: 100px;}
+        .boxes div:hover span {
+              color: #000;  
+            }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -263,6 +297,8 @@ main {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
+  body {
+    background: url(../img/bgtab.jpg);}
   main {
     align-items: center;
     text-align: center; }
@@ -285,7 +321,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/portrait_small.png");
       width: 150px;
       height: 150px; }
     .menu .nav-link{
@@ -300,6 +336,11 @@ main {
   }
 
 @media screen and (max-width: 500px) {
+  body {
+    background: url(../img/bgmobile.jpg);}
+    body#bg-img {
+      background: url(../img/bgmobile1.png);}
+
   main {
     padding: 2rem; }
     main #home h1 {
@@ -322,4 +363,10 @@ main {
   .icon-img{
     width: 40px;
     height: 40px;
+    margin-left: 5px;
+  }
+
+  .icon-img:hover{
+    transition: all 0.3s;
+    transform: translateY(-10px);
   }
