@@ -370,3 +370,9 @@ main {
     transition: all 0.3s;
     transform: translateY(-10px);
   }
+
+
+.ach img{
+  max-width:70%;
+
+}
